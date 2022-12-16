@@ -1,5 +1,5 @@
 export type IOrder = {
-    recipient: string
-    createdAt: string
-    amount: number
+  recipient: string
+  createdAt: string
+  amount: number
 }

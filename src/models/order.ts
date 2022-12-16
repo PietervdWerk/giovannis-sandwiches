@@ -7,6 +7,6 @@ const OrderSchema = new Schema<IOrder>({
   amount: { type: Number, required: true },
 });
 
-const OrderModel = models.Order || model('Order', OrderSchema);
+const OrderModel = models.Order || model("Order", OrderSchema);
 
-export default OrderModel
+export default OrderModel;
