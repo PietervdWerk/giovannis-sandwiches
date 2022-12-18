@@ -26,9 +26,7 @@ export const orderRouter = router({
   getAll: publicProcedure.query(async () => {
     await dbConnect()
 
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore 2349
-    const orders = await OrderModel.find({})
+    const orders = (await OrderModel.find({}))
 
     return {
       orders,
