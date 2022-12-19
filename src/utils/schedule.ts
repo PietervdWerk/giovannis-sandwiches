@@ -46,7 +46,7 @@ export function createSchedule(orders: Order[]): ScheduleItem[] {
  * @param {ScheduleItem} schedule - ScheduleItem array.
  * @returns The time it takes to complete the schedule
  */
-function calculateTime(scheduleItem?: ScheduleItem) {
+export function calculateTime(scheduleItem?: ScheduleItem) {
   if (!scheduleItem) {
     return 0
   }
